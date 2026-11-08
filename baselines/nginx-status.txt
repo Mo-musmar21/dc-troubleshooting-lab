@@ -1,0 +1,32 @@
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-08 23:26:14 +03; 41min ago
+ Invocation: f790779e6d1a42d096d49f0fb15540e6
+       Docs: man:nginx(8)
+    Process: 10645 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 10647 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 10689 (nginx)
+      Tasks: 17 (limit: 9106)
+     Memory: 13.3M (peak: 33.8M)
+        CPU: 116ms
+     CGroup: /system.slice/nginx.service
+             ├─10689 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─10691 "nginx: worker process"
+             ├─10692 "nginx: worker process"
+             ├─10693 "nginx: worker process"
+             ├─10694 "nginx: worker process"
+             ├─10695 "nginx: worker process"
+             ├─10696 "nginx: worker process"
+             ├─10697 "nginx: worker process"
+             ├─10698 "nginx: worker process"
+             ├─10699 "nginx: worker process"
+             ├─10700 "nginx: worker process"
+             ├─10701 "nginx: worker process"
+             ├─10702 "nginx: worker process"
+             ├─10703 "nginx: worker process"
+             ├─10704 "nginx: worker process"
+             ├─10705 "nginx: worker process"
+             └─10706 "nginx: worker process"
+
+Nov 08 23:26:13 MM05 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Nov 08 23:26:14 MM05 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
